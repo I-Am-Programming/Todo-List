@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#todo-container {
+  margin-top: 80px;
+  text-align: center;
+  list-style-type: none;
+  height: 550px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+li {
+  font-size: 3rem;
+  color: white;
+  line-height: 60px;
+}
+
+.delete {
+  outline: none;
+  border: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  float: left;
+}
+.complete {
+  outline: none;
+  border: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  float: left;
+  margin-left: 10px;
+}
+
+small {
+  color: red;
+  margin-top: 10px;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.btn-sm {
+  border: 0;
+  outline: none;
+}
+
+form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  font-size: 2rem;
+}
+
+input[type="text"] {
+  margin: 10px 10px;
+}
+
+input[type="submit"] {
+  width: 55px;
+  transition: 0.3s;
+}
+
+input[type="submit"]:focus {
+  border: 1px solid green;
+}
+
+input[type="submit"]:hover {
+  width: 188px;
+}
+
+@media screen and (max-width: 768px) {
+  li {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    margin-top: 8px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
